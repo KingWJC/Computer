@@ -89,6 +89,17 @@ baseurl=https://vault.centos.org/6.9/os/x86_64/
 gpgcheck=0
 ```
 
+### yum 运行报错.
+
+- Errors during downloading metadata for repository 'appstream'
+  Error : Failed to download metadata for repo 'AppStream' ; 
+  Error: Failed to download metadata for repo 'epel': Cannot download repomd.xml: Cannot download repodata/repomd.xml: All mirrors were tried
+  Could not resolve host: mirrors.aliyun.com
+- 原因 : CenOS 8 下, 网络配置未添加DNS  
+- 编辑/etc/sysconfig/network-scripts/ens33文件, DNS1=114.114.114.114, 
+- 重载配置文件: nmcli c reload ens33;   重启网卡: nmcli c up ens33.
+
 ### DNF
 
 yum 已经被 dnf 取代，dnf 是它的一个现代化的分支，它保留了大部分 yum的接口。
+
