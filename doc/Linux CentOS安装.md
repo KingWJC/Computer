@@ -78,4 +78,6 @@ boot是最小化引导的ISO镜像，需要通过BaseOS和AppStream存储库安�
 
 6. Root密码和用户.
 
+7. 网络配置：未添加DNS，导致网络失败。
+
 > 更多新特性，请参考阅读红帽的官方文档https://access.redhat.com/documentation/zh-cn/red_hat_enterprise_linux/8/html/8.0_release_notes/notable_changes_to_containers
