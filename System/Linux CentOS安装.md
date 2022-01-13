@@ -26,7 +26,7 @@
   - 删除网卡物理地址和唯一 标识。(方便后期克隆虚拟机，以防多个虚拟机拥有相同的网卡物理地址，出现网络问题。删除70-persistent-net.rules文件，新文件会重新生成物理地址和标识，并绑定新主机名）
   - 启用网卡。配置IPADDR，NETMASK, GATEWAY, DNS1
   - 查看ifconfig, 重启服务。然后测试。
-    - centOS 6: service network restart.
+    - centOS 6/7: service network restart.
     - centOS 8:  重载配置文件: nmcli c reload ens33;   重启网卡: nmcli c up ens33.
 - ifcfg-eth0配置参数
   - HWADDR：网卡物理地址。

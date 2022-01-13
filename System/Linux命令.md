@@ -228,11 +228,15 @@ makewhatis命令创建whatis数据库：， 然后whatis和man -f 命令可用�
     - 用其他文件名保存             :w filename
     - 在现有文件中保存并覆盖该文件   :w! filename
 
-
-
 ### (.)点的用法
 
 1. 它放在目录名称的命令的参数处时，表示“当前目录“；两个点，表示“当前目录的父目录”
 2. 在一个文件或目录的开头加上点，它表示这个文件或目录会被隐藏
 3. 两个点，构建序列：echo {1..10..2} 得到1-10间的奇数；mkdir {2009..2019}*Invoices，touch file*{a..z}.txt
 4. 可以是 source 命令的代名词，你可以用它在当前 shell 中执行一个文件，而不是以某种其它的方式去运行一个脚本文件（这通常指的是 Bash 会产生一个新的 shell 去运行它）如：. myscript; echo $myvar.
+
+## 参考
+
+https://www.runoob.com/linux/linux-tutorial.html
+
+linux 测试端口通不通：使用wget判断
